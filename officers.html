@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/header.css"></link> 
+<link rel="stylesheet" type="text/css" href="/css/recruit.css"></link>
+<link rel="stylesheet" type="text/css" href="/css/officers.css"></link>
+
+<title>UCLA Beta</title>
+</head>
+
+
+<body>
+<div class="loader"></div>
+<div id="pagewrap">
+<div id="header">
+
+<div id="headerwrap">
+<div id="logo"><img src="/jpg/Logo.png"></img></div>
+
+<div id="navbar">
+<ul>
+<li><a href="index.html"> Home</a> </li>
+<li><a> Recruitment </a>
+
+<ul>
+<li><a href="recruit.html">Becoming a Member<br></a></li>
+<li><a href="letter.html">Letter From Recruitment Chair<br></a></li>
+<li><a href="parents.html">Parents<br></a></li>
+<li><a href="form.php">Recruitment Interest Form</a></li>
+</ul>
+
+</li>
+<li><a>About</a>
+<ul>
+<li><a href="officers.html">Chapter Officers<br></a></li>
+<li><a href="gammanu.html">Gamma Nu Chapter<br></a></li>
+<li><a href="general.html">General Fraternity<br></a></li>
+</ul>
+
+</li>
+<li><a href="http://www.betathetapi.org/home/about/newsletters/">Newsletter</a></li>
+<li><a href="photos.html">Photos</a></li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div id="recruitpage">
+<section class="ib-container" id="ib-container">
+    <article>
+        <header>
+            <h3><a href="#">President</a></h3>
+            <img src="/jpg/officers/Chris_Long.jpg">
+            <span>Chris Long</span>
+        </header>
+      
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">External Vice President</a></h3>
+            <img src="/jpg/officers/Brandon_Jackson.jpg">
+            <span>Brandon Jackson</span>
+        </header>
+        
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Internal Vice President</a></h3>
+            <img src="/jpg/officers/Nick_Shelley.jpg">
+            <span>Nick Shelley</span>
+        </header>
+       
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Treasurer</a></h3>
+            <img src="/jpg/officers/Joe_D.jpg">
+            <span>Joseph DeCicco</span>
+        </header>
+        
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Pledge Educator</a></h3>
+            <img src="/jpg/officers/Ty_Pensa.jpg">
+            <span>Ty Pensa</span>
+        </header>
+        
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Recruitment Chair</a></h3>
+            <img src="/jpg/officers/Cole_K.jpg">
+            <span>Cole Kahrilas</span>
+        </header>
+       
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Risk Manager</a></h3>
+            <img src="/jpg/officers/Connor_King.jpg">
+            <span>Connor King</span>
+        </header>
+      
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Secretary</a></h3>
+            <img src="/jpg/officers/Joey_V.jpg">
+            <span>Joey Vescera</span>
+        </header>
+      
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Chief Justice</a></h3>
+            <img src="/jpg/officers/Bobby_Block.jpg">
+            <span>Bobby Block</span>
+        </header>
+        
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Social Chair</a></h3>
+            <img src="/jpg/officers/Sam_Barber.jpg">
+            <span>Sam Barber</span>
+        </header>
+        
+    </article>
+    <article>
+        <header>
+            <h3><a href="#">Social Chair</a></h3>
+            <img src="/jpg/officers/Jeff_C.jpg">
+            <span>Jeff Charca</span>
+        </header>
+        
+    </article>
+    <article>
+        
+        
+    </article>
+    <!-- ... -->
+</section>
+
+
+</div>
+<div class='footer'>
+<div class='footwrap'>
+
+&copy UCLA Beta Theta Pi 2014
+</div>
+</div>
+</body>
+<script>
+
+			$(function() {
+				
+				var $container	= $('#ib-container'),
+					$articles	= $container.children('article'),
+					timeout;
+				
+				$articles.on( 'mouseenter', function( event ) {
+						
+					var $article	= $(this);
+					clearTimeout( timeout );
+					timeout = setTimeout( function() {
+						
+						if( $article.hasClass('active') ) return false;
+						
+						$articles.not( $article.removeClass('blur').addClass('active') )
+								 .removeClass('active')
+								 .addClass('blur');
+						
+					}, 65 );
+					
+				});
+				
+				$container.on( 'mouseleave', function( event ) {
+					
+					clearTimeout( timeout );
+					$articles.removeClass('active blur');
+					
+				});
+			
+			});
+		
+</script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");                                    
+})
+</script>
+</html>

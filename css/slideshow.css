@@ -1,0 +1,113 @@
+#mainwrapper
+{
+width:100%;
+height:auto;
+min-width:1000px;
+background-image:url("/jpg/background2.jpg");
+background-repeat:no-repeat;
+background-position:55% center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+#slideshowbody
+{
+position:relative;
+margin-left:auto;
+margin-right:auto;
+width:75%;
+min-width:1000px;
+max-width:1200px;
+height:auto;
+background:transparent;
+padding-top:20px;
+padding-bottom:40px;
+}
+#slidewrapper
+{
+position:relative;
+top:0px;
+margin-left:auto;
+margin-right:auto;
+height:400px;
+width:940px;
+background:transparent;
+}
+#slide
+{
+display:inline-block;
+width:590px;
+height:400px;
+position:absolute;
+left:0px;
+background:transparent;
+margin-right:0px;
+padding-right:0px;
+}
+#slide img
+{
+margin-top:60px;
+margin-right:0px;
+margin-left:0px;
+border:solid 5px black;
+}
+#slidenav
+{
+margin-left:0px;
+position:absolute;
+right:0px;
+display:inline-block;
+background-image:url("/jpg/pattern.png");
+height:auto;
+width:300px;
+padding:10px;
+margin-top:20px;
+padding-bottom:0px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+#slidenav ul
+{
+
+}
+#slidenav li
+{
+
+}
+#navelement
+{
+position:relative;
+width:290px;
+height:100px;
+background:white;
+margin-bottom:15px;
+border:solid 3px black;
+margin-left:auto;
+margin-right:auto;
+}
+
+#navelement.first
+{
+background-image:url("/jpg/rush.png");
+background-size:300px 100px;
+}
+
+#navelement.second
+{
+background-image:url("/jpg/Badge.png");
+background-size:300px 100px;
+}
+
+#navelement.third
+{
+background-image:url("/jpg/alumni.png");
+background-size:300px 100px;
+}
+
+#navelement.active
+{
+border:solid 6px white;
+border-radius:5px;
+}

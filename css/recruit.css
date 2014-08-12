@@ -1,0 +1,72 @@
+/*@import url(http://fonts.googleapis.com/css?family=Free+Serif);*/
+#recruitpage
+{
+height:100%;
+height:auto;
+width:75%;
+min-height:800px;
+min-width:980px;
+max-width:1200px;
+background:white;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+margin-bottom:10px;
+padding:10px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 1);
+-moz-box-shadow:    0px 0px 4px 0px rgba(50, 50, 50, 1);
+box-shadow:         0px 0px 4px 0px rgba(50, 50, 50, 1);
+}
+
+#recruitpage.officers
+{
+background:transparent;
+}
+
+#recruitpage img.pledges
+{
+width:600px; 
+height:350px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+border:3px solid black;
+}
+
+#recruitpage h1
+{
+font-family: Times New Roman;
+ font-size:30px;
+color:#bf993d;
+}
+#recruitpage h2
+{
+font-family: Times New Roman;
+ font-size:22px;
+color:#0256A1;
+}
+#recruitpage h3
+{
+font-family: Times New Roman;
+ font-size:20px;
+color:#0256A1;
+}
+
+#recruitpage hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+#recruitpage hr:after {
+    content: "\0392 \0398 \03a0";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
